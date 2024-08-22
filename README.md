@@ -18,17 +18,19 @@ Nesta seção, você encontrará uma explicação dos principais comandos básic
 
 4. **`git remote -v`**: Mostra a lista de repositórios remotos associados ao seu repositório local, junto com as URLs. É útil para confirmar que o repositório remoto foi adicionado corretamente.
 
-5. **`git add .`**: Adiciona todas as mudanças feitas nos arquivos (novos ou modificados), preparando-os para serem incluídos no próximo commit.
+5. **`git pull origin main`**: Caso existam alterações no seu repositório do GitHub que ainda não estão na sua máquina, utilize este comando para trazê-las para o repositório local(Utilize esse comando com cuidado). 
 
-6. **`git commit -m "Deixe a mensagem do que voce fez aqui"`**: Salva as mudanças adicionadas com uma mensagem que descreve o que foi feito. A mensagem deve ser curta e clara, sem acentos, cedilha, ou caracteres especiais.
+6. **`git add .`**: Adiciona todas as mudanças feitas nos arquivos (novos ou modificados), preparando-os para serem incluídos no próximo commit.
 
-7. **Caso seja seu primeiro commit:** Se você nunca fez um commit antes, Git pode pedir para você configurar seu nome de usuário e e-mail, que serão usados para identificar quem fez o commit.
+7. **`git commit -m "Deixe a mensagem do que voce fez aqui"`**: Salva as mudanças adicionadas com uma mensagem que descreve o que foi feito. A mensagem deve ser curta e clara, sem acentos, cedilha, ou caracteres especiais.
+
+8. **Caso seja seu primeiro commit:** Se você nunca fez um commit antes, Git pode pedir para você configurar seu nome de usuário e e-mail, que serão usados para identificar quem fez o commit.
 
    - **`git config --global user.name "Seu nome"`**: Configura seu nome globalmente para todos os commits futuros.
    
    - **`git config --global user.email "seuEmail@exemplo.com"`**: Configura seu e-mail globalmente para todos os commits futuros.
 
-8. **`git push -u origin main`**: Envia (faz o "push") as mudanças confirmadas localmente para o repositório remoto no GitHub. O `-u` define a branch remota como padrão para futuros pushes, então você só precisará usar `git push` nas próximas vezes.
+9. **`git push -u origin main`**: Envia (faz o "push") as mudanças confirmadas localmente para o repositório remoto no GitHub. O `-u` define a branch remota como padrão para futuros pushes, então você só precisará usar `git push` nas próximas vezes(Utilize esse comando com cuidado).
 
 
 
